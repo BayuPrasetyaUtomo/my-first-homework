@@ -1,58 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: Jura, Arial, Helvetica, sans-serif;
-}
-
-main {
-  max-width: 65%;
-  margin-inline: auto;
-  padding: 5rem 0;
-}
-
-header, footer {
-  padding: 1.75rem 1rem;
-  background-color: #90a1b9;
-  position: sticky;
-  top: 0;
-  font-size: 20px;
-  font-weight: 800;
-}
-
-footer {
-  min-height: 10rem;
-}
-
-.copyright {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  min-height: 9.75rem;
-}
-
-h1, h2, h3, h4 {
-  text-transform: capitalize;
-  padding: 0.75rem 0.5rem;
-}
-
-p, li {
-  padding: 0.15rem 0.5rem;
-  color: black;
-}
-
-ol, ul {
-  padding: 0 1.25rem;
-}
-
-.hero-banner-img {
-  height: 35rem;
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 2.5rem;
-  object-fit: cover;
 }

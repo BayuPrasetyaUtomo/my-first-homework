@@ -6,48 +6,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ilmu Bulking - HTML & CSS Practice</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-clifford: #da373d;
+    }
+  </style>
 </head>
 
 <body>
-  <header class="header-title">
-    <span>HTML & CSS Practice</span>
+  <header class="px-8 py-8 bg-slate-300">
+    <span class="text-xl font-bold">HTML & CSS Practice</span>
   </header>
-  <main>
-    <img class="hero-banner-img" src="https://images.pexels.com/photos/841131/pexels-photo-841131.jpeg" alt="">
+  <main class="max-w-6xl mx-auto py-8">
+    <img class="h-120 mb-8 object-cover w-full" src="https://images.pexels.com/photos/841131/pexels-photo-841131.jpeg"
+      alt="">
     <div>
-      <h1>ilmu bulking</h1>
+      <h1 class="text-4xl font-extrabold capitalize">ilmu bulking</h1>
       <p>
         Ilmu bulking adalah pengetahuan dan strategi yang digunakan untuk menambah massa otot secara optimal, sambil
         meminimalkan penambahan lemak. Cocok banget buat kamu yang latihan di gym dan ingin tubuh lebih besar dan
         berisi.
       </p>
     </div>
-    <ol>
+    <ol class="list-decimal px-4 py-2">
       <li>
         <article>
-          <h2>Kalori Surplus (Kunci Utama)</h2>
+          <h2 class="text-2xl font-bold">Kalori Surplus (Kunci Utama)</h2>
           <ul>
             <li>Kamu harus makan lebih banyak kalori dari yang kamu bakar setiap hari.</li>
             <li>Rekomendasi: Surplus sekitar 250–500 kalori per hari.</li>
-            <li>Gunakan kalkulator TDEE (Total Daily Energy Expenditure) untuk tahu kebutuhan kalori harianmu.</li>
+            <li>Gunakan kalkulator <em class="font-bold text-sm">TDEE (Total Daily Energy Expenditure)</em> untuk tahu kebutuhan kalori harianmu.</li>
           </ul>
 
         </article>
       <li>
-        <h2>Asupan Makronutrien yang Seimbang</h2>
-        <h3>Protein:</h3>
-        <ul>
-          <li>1.6 – 2.2 gram per kg berat badan per hari.</li>
-          <li>Contoh: BB 60 kg → target protein sekitar 96–132 gram.</li>
-        </ul>
+        <h2 class="text-2xl font-bold">Asupan Makronutrien yang Seimbang</h2>
         <article>
-          <h3>Karbohidrat:</h3>
-          <ul>
+          <h3 class="text-lg font-bold">Protein:</h3>
+          <ul class="list-disc px-4 py-2">
+            <li>1.6 – 2.2 gram per kg berat badan per hari.</li>
+            <li>Contoh: BB 60 kg → target protein sekitar 96–132 gram.</li>
+          </ul>
+        </article>
+        <article>
+          <h3 class="font-bold text-lg">Karbohidrat:</h3>
+          <ul class="list-disc px-4 py-2">
             <li>Sumber energi utama. Fokus pada karbo kompleks seperti nasi merah, oats, ubi, kentang.</li>
           </ul>
+        </article>
 
-          <h3>Lemak sehat:</h3>
-          <ul>
+        <article>
+          <h3 class="font-bold text-lg">Lemak sehat:</h3>
+          <ul class="list-disc px-4 py-2">
             <li>20–30% dari total kalor</li>
             <li>Sumber: alpukat, kacang-kacangan, telur, ikan berlemak.</li>
           </ul>
@@ -58,9 +69,9 @@
       </li>
     </ol>
   </main>
-  <footer>
-    <span>HTML & CSS Practice</span>
-    <div class="copyright">
+  <footer class="flex flex-col justify-between px-8 py-8 min-h-40 bg-slate-300">
+    <span class="text-xl font-bold">HTML & CSS Practice</span>
+    <div class="text-center">
       <span>&copy; - &lt;My Name&gt;</span>
     </div>
   </footer>
